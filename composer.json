@@ -1,0 +1,41 @@
+{
+    "name": "uogsoe/user-from-env",
+    "description": "Laravel package to automatically create a user from ENV variables or from files/secrets",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Billy",
+            "email": "billybofh@gmail.com"
+        }
+    ],
+    "require": {
+        "fzaninotto/faker": "^1.8",
+        "ohffs/simple-laravel-ldap": "^1.3",
+        "illuminate/support": "^6.0",
+        "illuminate/console": "^6.0",
+        "illuminate/database": "^6.0",
+        "illuminate/auth": "^6.0"
+    },
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "UoGSoE\\UserFromEnv\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests"
+        }
+    },
+    "require-dev": {
+        "orchestra/testbench": "^4.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "UoGSoE\\UserFromEnv\\UserFromEnvServiceProvider"
+            ]
+        }
+    }
+}
